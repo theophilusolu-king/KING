@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FORM</title>
+</head>
+<body class="copy">
+    <div class="head">
+    <div class="form-container">
+         <div class="for-img">
+            <img src="oau_logo_eb5tgl.png" class="pre">
+        </div>
+        <div class="for-us">
+            <h1 style="color: #0F1F3d; font-size: 22px; font-family: Arial, Helvetica, sans-serif;">Obafemi Awolowo University, Ile-Ife</h1>
+            <p style="margin-top: -14px; padding-top: 0px; font-size: 13px; font-family: sans-serif;">Centre for Distance Learning</p>
+            <p style="font-size: 10px; margin-top: 0px;">CREATE AN ACCOUNT</p>
+            <div class="main-form">
+                <form action="mailto:theophilusking2000@gmail.com" method="post" enctype="text/plain" class="mine-form">
+                        <label for="first name"></label>
+                        <input id="First Name"  type="text" minlength="1" maxlength="64" placeholder="First Name&#42" required>
+                        <label for="Middle Name"></label>
+                        <input id="Middle Name" type="text" placeholder="Middle Name">
+                        <label for="LastName"></label>
+                        <input id="LastName" type="text" placeholder="Surname/Last Name&#42" required>
+                        <label for="PhoneNumber"></label>
+                        <input id="PhoneNumber" type="text" placeholder="Phone Number&#42">
+                        <small style="color:#DC3545; font-family:sans-serif; font-size: 10px; display:block; margin-top: 8px; margin-left: 4px;">Email should not contain a dash (-)</small>
+                        <label for="Email"></label>
+                        <input id="Email" type="text" placeholder="Email address&#42" required>
+                        <label for="Password"></label>
+                        <input id="Password" type="password" placeholder="Password (min. 8 characters)" required>
+                        <label for="ConfirmPassword"></label>
+                        <input id="ConfirmPassword" type="password" placeholder="Confirm Password&#42" required>
+<div class="flow">
+    <input class="check" type="checkbox" id="show-passwords">
+                        <label for="show-passwords" class="terms">Show passwords</label>
+                    </div>
+                <div class="botton">
+                    <button class="button" type="submit">Register Now</button>
+                </div>
+                <div class="flo">
+                    <button class="flor" type="submit">Already have an account? sign in</button>
+                </div>
+</form>
+</div>
+ </div>
+    </div>
+    <div class="foo">
+        <img src="Lautech slider.jpg" class="prey">
+    </div>
+    </div>
+    <script>
+        const showPasswords = document.getElementById("show-passwords");
+        const passwordFields = [
+            document.getElementById("Password"),
+            document.getElementById("ConfirmPassword")
+        ];
+
+        showPasswords.addEventListener("change", () => {
+            const type = showPasswords.checked ? "text" : "password";
+            passwordFields.forEach((field) => {
+                field.type = type;
+            });
+        });
+    </script>
+</body>
+</html>
